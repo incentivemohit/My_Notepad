@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notepad.NotepadController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="new_file" mnemonicParsing="false" onAction="#handleAction" text="New File" />
+                  <MenuItem fx:id="new_window" mnemonicParsing="false" onAction="#handleAction" text="New window" />
+                  <MenuItem fx:id="open" mnemonicParsing="false" onAction="#handleAction" text="open..." />
+                  <MenuItem fx:id="save" mnemonicParsing="false" onAction="#handleAction" text="Save" />
+              <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#handleAction" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="cut" mnemonicParsing="false" onAction="#handleAction" text="Cut" />
+                  <MenuItem fx:id="copy" mnemonicParsing="false" onAction="#handleAction" text="Copy" />
+                  <MenuItem fx:id="paste" mnemonicParsing="false" onAction="#handleAction" text="Paste" />
+                  <MenuItem fx:id="select" mnemonicParsing="false" onAction="#handleAction" text="Select All" />
+                  <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#handleAction" text="Delete" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem fx:id="about" mnemonicParsing="false" onAction="#handleAction" text="About" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" promptText="Write here..." BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notepad.About">
+   <children>
+      <Label layoutX="221.0" layoutY="39.0" text="About Me" textFill="#dd5252">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="101.0" prefHeight="175.0" prefWidth="524.0" text="Hii User, My name is Mohit Kumar and I have done B.tech in Ece and passionate for java and web technologies and developed this application for learning purpose. If you get any problem in this application and want to suggest me something  then contact me." wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="BASELINE_CENTER" layoutX="2.0" layoutY="286.0" prefHeight="17.0" prefWidth="600.0" text="Email : mohitkumar.e21@nsut.ac.in">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
